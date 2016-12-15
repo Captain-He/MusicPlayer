@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Play_MasterPage" %>
+<html >
+<head runat="server">
+    <title>无标题页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+        	font-size:9pt;
+            height: 28px;
+        }
+        </style>
+</head>
+<body><form id="form1" runat="server"><div>
+    <table cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td style="background-color: #323232; height: 80px;">
+                <img alt="" src="../images/logo.png" style="width: 220px; height: 70px" /></td>
+        </tr>
+        <tr>
+            <td class="style2" style="background-color: #CB0D0D; font-size: medium; color: #FFFFFF;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 欢迎 
+                <asp:LoginName ID="LoginName2" runat="server" Font-Size="Medium" ForeColor="White" />
+                播放音乐&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" 
+                                    NavigateUrl="~/Default.aspx" Font-Size="Medium" ForeColor="White" Target="_parent">返回</asp:HyperLink>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    <p>
+                        <br />
+                    </p>
+        
+        </asp:ContentPlaceHolder></td>
+        </tr>
+        <tr>
+            <td align="center" 
+                style="background-color: #323232; color: #FFFFFF; height: 80px;">
+                版权所有</td>
+        </tr>
+        <tr>
+            <td style="background-color: #FFFFFF">
+                &nbsp;</td>
+        </tr>
+    </table>
+    
+    
+        
+    </div>
+    </form>
+</body>
+</html>
+
